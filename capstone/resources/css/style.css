@@ -1,0 +1,499 @@
+
+/*Desktop version (outside of any media query)*/
+html {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  height: 64px;
+}
+header nav {
+  background-color: rgba(117,216,230,0.08);
+}
+h1, h2, h3 {
+  font-family: "Comfortaa", sans-serif;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 24px;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.navigation {
+  align-items: center;
+}
+
+.logo-words {
+  padding: 0 2px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.3rem;
+}
+.logo-words.one {
+  color: #9bc4e2;
+}
+nav li {
+  list-style: none;
+  display: flex;
+}
+
+nav li a {
+  color: black;
+}
+
+nav li a:hover {
+  color: #9bc4e2;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+
+}
+.more a:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+main {
+  text-align: center;
+  transition: all 750ms linear 250ms;
+}
+p {
+  text-align: left;
+}
+.mobile {
+  display: none;
+}
+.desktop {
+  background: white;
+  display: flex;
+  margin-left: 24px;
+  padding-left: 0;
+  width: 100%;
+}
+.logo {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-weight: bold;
+}
+nav li:nth-child(n+1) {
+  margin-right: 16px;
+}
+nav li:last-child {
+  margin-right: 24px;
+}
+/*First section*/
+#something-new {
+  border-top: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(155,196,226,0.9); /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* Standard syntax */
+}
+
+#something-new h1 {
+  text-shadow: 0.1em 0.1em 0.1em rgba(255,255,255,0.7);
+}
+
+.start-here {
+padding: 32px 16px;
+}
+
+.banner {
+background: none;
+height: auto;
+width: 60%;
+padding: 32px 24px;
+}
+.banner img {
+display: flex;
+box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+border-radius: 10px;
+}
+.start-here {
+max-width: 423px;
+}
+.start-here h1 {
+text-align: left;
+font-size: 4vw;
+line-height: 4rem;
+}
+button {
+  font-family: "Comfortaa", sans-serif;
+  background: white;
+  padding: 20px 40px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.45em;
+  margin: 1rem 0;
+  width: 85%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .01);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1450ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button:hover {
+  color: rgb(155,196,226);
+  border: 1px solid;
+  box-shadow: inset 0 0 10px rgba(155,196,226, .5), 0 0 10px rgba(155,196,226, .6);
+  outline-color: rgba(155,196,226, 0.8);
+  outline-offset: 15px;
+}
+/*Second section*/
+#information {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background-color: white;
+  padding: 16px 16px 32px;
+}
+
+.information-text p{
+  text-align: center;
+}
+
+#information p {
+line-height: 1.3rem;
+font-size: 1.1rem;
+}
+.information-text {
+padding: 8px 16px;
+}
+
+.information-text h3, .information-text p {
+margin-bottom: 8px;
+}
+
+.info-thumb {
+height: 150px;
+overflow: hidden;
+}
+
+.practice {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 32px 24px;
+}
+.practice img {
+  min-width: 350px;
+  border-radius: 10px;
+}
+.practice h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.info-thumb {
+  height: auto;
+}
+.orientation, .campus, .guest-lectures {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 16px;
+  max-width: 423px;
+}
+.orientation img, .campus img, .guest-lectures img {
+  width: 35%;
+  border-radius: 5px;
+  transition: all 200ms linear;
+}
+
+.orientation img:hover, .campus img:hover, .guest-lectures img:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+
+}
+.information-features div:first-child {
+  margin-top: 16px;
+}
+#information div:nth-child(n+2) {
+  border-top: none;
+}
+.information-features {
+  border-left: 1px solid grey;
+  padding-bottom: 32px;
+}
+blockquote footer {
+  margin-top: 32px;
+}
+
+
+/*Section three*/
+.featured-courses {
+  padding: 50px 16px;
+}
+
+.featured-courses h2, .exhibition-featured h2 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.orientation img, .campus img, .guest-lectures img {
+  width: 50%;
+  border-radius: 5px;
+}
+.featured-courses {
+  background: rgba(155,196,226,0.9); /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(155,196,226,0.6), rgba(155,196,226,0.4), white); /* Standard syntax */  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.featured-courses img, .featured-courses .course-info p {
+  display: flex;
+}
+.featured-courses img {
+  height: 154px;
+}
+.course-info h3 {
+  padding: 16px;
+  margin: 10px 0;
+  margin-bottom: 8px;
+}
+
+.course-info h3, .course-info {
+  background: white;
+}
+
+.course-info p {
+  padding: 0 16px 8px;
+}
+.course-info p:last-child {
+  padding: 0 16px 24px;
+}
+.course-card {
+  width: 350px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  transition: all 300ms linear;
+}
+.course-card img {
+  padding-bottom: 10px;
+}
+/*Workaround for the course cards (mini query)*/
+@media only screen (min-width: 501px){
+.course-card h3{
+  display: none;
+}
+}
+.course-card:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+
+}
+.course-info {
+  min-height: 100px;
+}
+/*Section four*/
+
+
+.exhibit-vid p {
+  line-height: 1.4rem;
+}
+.exhibition-featured h2 {
+  padding: 32px 0;
+}
+.recent-exhibits {
+  display: block;
+}
+.exhibition-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+.exhibit-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  max-width: 423px;
+  height: 168px;
+}
+.exhibit-card:hover {
+  background-color: rgba(255,255,255,0.28);
+}
+.exhibit-card img {
+  width: 35%;
+  margin-right: 16px;
+  border-radius: 5px;
+}
+.exhibit-info {
+  display: flex;
+  flex-direction: column;
+}
+.exhibit-card:first-child {
+  border-bottom: 1px solid grey;
+}
+.exhibit-vid {
+  margin-right: 24px;
+  width: 60%;
+}
+.exhibit-vid video{
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+}
+.exhibit-vid h3, .exhibit-vid p {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+/*Section five*/
+.bottom-footer {
+  background: rgba(155, 196, 226,0.3);
+}
+
+footer {
+  border-top: 1px solid grey;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p {
+  padding-left: 3rem;
+}
+
+footer nav {
+  display: flex;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer nav ul li:first-child {
+  margin-right: 16px;
+}
+
+footer nav ul li:nth-child(n+2){
+  margin-right: 3rem;
+}
+
+.copyright {
+  margin-left: 24px;
+}
+
+
+
+/*Mobile version*/
+@media only screen and (max-width: 620px) {
+  /*All of the things to hide when in Mobile version*/
+  .desktop,
+  .practice,
+  .start-here,
+  .banner img,
+  .course-info,
+  .course-card img,
+  .course-card .course-info p,
+  .recent-exhibits,
+  .exhibition-featured-info,
+  .exhibit-vid h3,
+  .exhibit-vid p,
+  .footer-nav {
+    display: none;
+  }
+.mobile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+#something-new {
+  background: white;
+}
+.banner {
+  width: 100%;
+  height: 180px;
+  background: url('../images/banner.jpg');
+  background-size: cover;
+}
+
+.mobile h1 {
+  margin: 0;
+  padding-top: 32px;
+  font-size: 2rem;
+}
+.information-text p{
+  text-align: center;
+}
+.information-features {
+  text-align: center;
+}
+.orientation img, .campus img, .guest-lectures img {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.featured-courses {
+  background: white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+}
+.featured-courses h2 {
+  padding-right: 35px;
+}
+.course-card h3 {
+  padding: 15px 0;
+  color: rgba(0,0,0,0.8);
+}
+
+.course-card {
+  height: 50px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+}
+.recent-exhibits {
+  display: none;
+}
+.exhibit-vid {
+  width: 100%;
+}
+
+}
